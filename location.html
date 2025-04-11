@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - little boat Kids Academy</title>
+    <link rel="stylesheet" href="location.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav>
+        <div class="logo">
+            <img src="images/logobglesscropped.png" alt="Academy Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="location.html"><span style="color: red;">Location</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="location-hero">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3468.44903417248!2d76.9692023755376!3d29.619698875140266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDM3JzEwLjkiTiA3NsKwNTgnMTguNCJF!5e0!3m2!1sen!2sin!4v1743777258671!5m2!1sen!2sin" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="location-details">
+        <div class="address-card">
+            <h2>📍Our Location</h2>
+            <p>Address: street no: 3,Behind Madhuban Police Complex</p>
+            <p>Sirsi,Karnal</p>
+            <div class="map-container">
+                <img src="images/location.png" alt="Location Map" height="200px">
+            </div>
+        </div>
+        
+        <div class="transport-info">
+            <h2>How to Reach Us</h2>
+
+            <div class="transport-card">
+                <h3>By bike 🏍️</h3>
+                <p></p>
+            </div>
+
+            <div class="transport-card">
+                <h3>By Car 🚗</h3>
+                <p></p>
+            </div>
+          
+            <div class="transport-card">
+                <h3>By Train 🚂</h3>
+                <p>Nearest station: Bazida jatan</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 little boat Kids Academy. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('nav-toggle').checked = false;
+        });
+    });
+</script>
+</html>

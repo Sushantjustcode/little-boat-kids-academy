@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>little boat Kids Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logobglesscropped.png" alt="Academy Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="location.html"><span style="color: red;">Location</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>
+                <span style="color: var(--primary);">Welcome</span>
+                <span style="color: var(--secondary);">to</span>
+                <span style="color: var(--accent);">Little</span>
+                <span style="color: var(--text);">Boat</span>
+                <span style="color: var(--secondary);">Kids</span>
+                <span style="color: rgb(130, 91, 164)">Academy</span>
+            </h1>
+            <p>Where Learning Meets Fun!</p>
+            <a href="#contact" class="cta-button">Join Our Family</a>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section id="about" class="about">
+        <h2>Our Magical World</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h1>🛝🏃‍♀️</h1>
+                <h3>Learning Through Play</h3>
+                <p>Fun activities that teach valuable lessons</p>
+            </div>
+            <div class="feature-card">
+               <h1>🖼️🎨</h1>
+                <h3>Creative Expression</h3>
+                <p>Art, music, and dance programs</p>
+            </div>
+            <div class="feature-card">
+               <h1>🌳🦺</h1>
+                <h3>Safe Environment</h3>
+                <p>Secure and nurturing atmosphere</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What age groups do you accept?</h3>
+                <p>We welcome children from 2 to 6 years old.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are your operating hours?</h3>
+                <p>We're open Monday to Friday, 7:30 AM to 6:00 PM.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What's included in the fees?</h3>
+                <p>Tuition,learning materials, and activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>📞 Mob:9466587995</p>
+                <p>📞 Mob:9050835685</p>
+                <p>✉️ little boat kids academy</p>
+                <p>⏰ Mon-Fri: 7:30 AM - 6:00 PM</p>
+            </div>
+            <!-- <div class="social-links">
+                <a href="#" class="social-btn">Facebook</a>
+                <a href="#" class="social-btn">Instagram</a>
+                <a href="#" class="social-btn">Twitter</a>
+            </div> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rainbow Kids Academy. All rights reserved.</p>
+    </footer>
+</body>
+
+<script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('nav-toggle').checked = false;
+        });
+    });
+</script>
+
+</html>
